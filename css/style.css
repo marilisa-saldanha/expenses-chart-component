@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+  /* Colors */
+  /* Primary */
+  --soft-red: hsl(10, 79%, 65%);
+  --light-soft-red: hsla(10, 79%, 65%, 0.7);
+  --cyan: hsl(186, 34%, 60%);
+  --light-cyan: hsla(186, 34%, 60%, 0.7);
+  /* Neutral */
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.125rem;
+  background-color: var(--cream);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+main .myBalance {
+  display: flex;
+  background-color: var(--soft-red);
+  width: 21.438rem;
+  padding: 1rem;
+  border-radius: .75rem;
+  justify-content: space-between;
+}
+
+main .myBalance .balance {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+main .myBalance .balance p {
+  color: var(--cream);
+  font-size: 1rem;
+  letter-spacing: .09rem;
+}
+
+main .myBalance .balance h2 {
+  color: var(--very-pale-orange);
+  letter-spacing: .1rem;
+}
+
+main .barCharts {
+  background-color: var(--very-pale-orange);
+  width: 21.438rem;
+  padding: 1.5rem 1rem 1rem;
+  border-radius: .75rem;
+}
+
+main .barCharts h1 {
+  color: var(--dark-brown);
+  font-size: 1.5rem;
+  letter-spacing: .03rem;
+  padding-left: .5rem;
+}
+
+main .barCharts #myBarChart {
+  margin: 1rem 0;
+  cursor: pointer;
+  padding-right: .5rem;
+}
+
+main .barCharts hr {
+  border: .063rem solid var(--cream);
+}
+
+main .barCharts .total {
+  display: flex;
+  padding: 1.5rem .5rem 1rem .5rem;
+  justify-content: space-between;
+}
+
+main .barCharts .total .totalThisMonth {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+main .barCharts .total .totalThisMonth p {
+  color: var(--medium-brown);
+  font-size: 1rem;
+}
+
+main .barCharts .total .totalThisMonth h2 {
+  color: var(--dark-brown);
+  font-size: 2rem;
+}
+
+main .barCharts .total .totalLastMonth {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+main .barCharts .total .totalLastMonth p:first-child {
+  color: var(--dark-brown);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+main .barCharts .total .totalLastMonth p:last-child {
+  color: var(--medium-brown);
+  font-size: 1rem;
+}
+
+footer {
+  color: var(--medium-brown);
+  text-align: center;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+}
+
+footer .attribution a {
+  color: var(--dark-brown);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer .attribution a:hover {
+  color: var(--soft-red);
+}
+
+@media (min-width: 768px) {
+  main .myBalance {
+    width: 26.563rem;
+    padding: 1.5rem;
+  }
+
+  main .barCharts {
+    width: 26.563rem;
+    padding: 1.5rem;
+  }
+
+  main .barCharts #myBarChart {
+    margin: 1.5rem 0;
+  }
+
+  footer {
+    font-size: 1.15rem;
+    padding: .5rem 0;
+  }
+}
