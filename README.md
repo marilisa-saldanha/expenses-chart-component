@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/expenses-chart-component-using-html-css-flexbox-js-and-chartjs-Xjf3jH6Df7)
+- [Live Site URL](https://marilisa-saldanha.github.io/expenses-chart-component/)
 
 ## My process
 
